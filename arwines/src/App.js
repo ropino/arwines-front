@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import "./App.css";
 
 // componentes
-// import Home from './components/Home';
+//import Home from './components/Home';
 // import Products from './components/Products'
 // import SingleProducts from './components/'
 import Login from "./components/Login";
@@ -18,8 +18,8 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
           <Switch>
-            {/* <Route exact path='/' component={Home} />
-          <Route path='/products' component={Products} />
+          {/* <Route exact path='/' component={Home} /> */}
+          {/* <Route path='/products' component={Products} />
           <Route path='/products/:id' component={SingleProducts} /> */}
             <Route path="/login" component={Login} />
             <Route path='/register' component={Register} />

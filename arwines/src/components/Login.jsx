@@ -4,6 +4,7 @@ import { useHistory } from "react-router";
 import { setLoggedUser } from "../store/user";
 import { validateEmail, validatePassword } from "../utils/validations";
 
+
 // MATERIAL UI
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
@@ -39,6 +40,8 @@ const Login = () => {
   const dispatch = useDispatch();
   const history = useHistory();
   const classes = useStyles();
+
+  const cart = useSelector((state) => state.cart);
 
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");

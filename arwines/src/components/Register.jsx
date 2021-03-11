@@ -51,10 +51,10 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if(validateEmail(email) === false){
-      return setError("Email invalido")
+      return setError("Credenciales invalidas")
     } 
     if(validatePassword(password) === false){
-      return setError("Password invalido")
+      return setError("Credenciales invalidas")
     } 
     
     dispatch(setNewUser({ firstName, lastName, email, password }));
