@@ -1,4 +1,3 @@
-
 import Home from './components/Home';
 import Products from './components/Products'
 import SingleProducts from './components/SingleProducts'
@@ -10,6 +9,7 @@ import { BrowserRouter, Switch, Route, useHistory, } from 'react-router-dom'
 
 function App() {
   return (
+    
     <div>
       <BrowserRouter>
         <Switch>
@@ -23,8 +23,6 @@ function App() {
       </BrowserRouter>
 
     </div >
-
-
   );
 }
 
