@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
 import setCart from "../store/cart"
 import { findProducts } from "../store/cart"
+import Navbar from './Navbar'
 
 // MATERIAL UI
 import Button from "@material-ui/core/Button";
@@ -100,6 +101,7 @@ const Cart = () => {
 
   return (
     <div>
+      <Navbar />
         <h1>CARRITO</h1><br />
         <p>
           Productos del carrito:
@@ -119,3 +121,4 @@ const Cart = () => {
 };
 
 export default Cart;
+

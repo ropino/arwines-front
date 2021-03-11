@@ -1,9 +1,10 @@
+
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
 import { setLoggedUser } from "../store/user";
 import { validateEmail, validatePassword } from "../utils/validations";
-
+import Navbar from './Navbar'
 
 // MATERIAL UI
 import Button from "@material-ui/core/Button";
@@ -69,6 +70,7 @@ const Login = () => {
 
   return (
     <div>
+      <Navbar />
       <Grid className={classes.grid}>
         <form onSubmit={handleSubmit}>
           <TextField
