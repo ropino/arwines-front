@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
-const Register = () => {
+const SingleProducts = () => {
     return (
         <div>
             <Navbar />
-            <p>Estoy en Register</p>
+            <p>Estoy en SingleProducts</p>
         </div>
     )
 }
-export default Register
+export default SingleProducts

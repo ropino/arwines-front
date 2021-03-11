@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
-const Register = () => {
+const Products = () => {
     return (
         <div>
             <Navbar />
-            <p>Estoy en Register</p>
+            <p>Estoy en Products</p>
         </div>
     )
 }
-export default Register
+export default Products
