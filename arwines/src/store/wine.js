@@ -1,21 +1,13 @@
-import { createAction, createReducer } from '@reduxjs/toolkit'
-// aca van a ir las acciones de user
-// un usuario loggeado
+import { createAction, createReducer, createAsyncThunk } from '@reduxjs/toolkit'
+import axios from 'axios'
 
-export const setWine = createAction('SET_WINE',(id)=> {
-    return axios
-    .get(`/*ruta back*/${id}`)
-    .then((res) => res.data)
-})
+export const setWine = createAsyncThunk('SET_WINE', id => {
+    return axios.get(`http://localhost:5000/api/product/${id}`)
+        .then(r => r.data);
+});
 
-// export const setUser = (user) => {
-//     return { type: "SET_USER", payload: user} // el user corrosponde al param 
-// }
-// en arr vacio se carga todo del segundo param
-const wineReducer = createReducer([], {
-    [setWine]: function (state, action) {
-        return action.payload
-    }
+const wineReducer = createReducer({}, {
+    [setWine.fulfilled]: (state, action) => action.payload
 })
 
 export default wineReducer

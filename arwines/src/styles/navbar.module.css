@@ -13,7 +13,7 @@
     width: 86px;
   }
   .barraD input {
-    font-size: 16px;
+    font-size: 15px;
     line-height: normal;
     font-weight: 400;
     color: #333;
@@ -21,13 +21,13 @@
     background-size: 16px;
     background-repeat: no-repeat;
     outline: none;
-    padding: 4px 0 4px 48px;
+    padding: 4px 0 4px 15px;
     border: 1px solid #dedede;
     transition: width .6s ease-in-out;
     height: 40px;
     background-color: #fff;
     border-radius: 32px;
-    width: 100%;
+    width: 17em;
     margin-top: 5px;
   }
    .orden {
