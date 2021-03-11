@@ -1,5 +1,1 @@
-import React from 'react'
-
-const Register = () => {
-
-}
+console.log("hola")
